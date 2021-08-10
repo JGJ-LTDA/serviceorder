@@ -11,3 +11,20 @@ public class ServiceorderApplication {
 	}
 
 }
+
+
+//DataSouces - Repositorys
+//
+//Interactor - Services // regras sobre o dominio
+//
+//Transporte - Controllers /orders ordemDto mapper -> order <- Service mapper -> orderEntity -> DataSorce -> Save(orderEntity);
+//
+//
+//		regra: pelo menos 5 itens
+//		conferir valor
+//
+//
+//
+//Domain - classes de negocio
+//
+//
