@@ -23,4 +23,8 @@ public class OrderService {
 
     }
 
+    public Order findOrderById(Long id){
+        return orderDataSource.orderById(id);
+    }
+
 }

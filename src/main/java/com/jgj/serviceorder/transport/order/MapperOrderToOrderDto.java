@@ -6,10 +6,11 @@ import org.modelmapper.ModelMapper;
 
 import java.util.function.Function;
 
-public class MapperOrderDtoToOrder implements Function<OrderDto, Order> {
+public class MapperOrderToOrderDto implements Function<Order, OrderDto> {
+
 
     @Override
-    public Order apply(OrderDto orderDto) {
-        return new ModelMapper().map(orderDto, Order.class);
+    public OrderDto apply(Order order) {
+        return  new ModelMapper().map(order, OrderDto.class);
     }
 }
