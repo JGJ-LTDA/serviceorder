@@ -1,6 +1,5 @@
 package com.jgj.serviceorder.transport.exceptionhandler;
 
-import com.algaworks.algafood.api.exceptionhandler.ProblemType;
 import com.fasterxml.jackson.databind.JsonMappingException.Reference;
 import com.fasterxml.jackson.databind.exc.PropertyBindingException;
 import com.jgj.serviceorder.domain.exception.NotFoundException;
@@ -49,6 +48,7 @@ public class ApiExceptionHandler extends ResponseEntityExceptionHandler {
                                                                   HttpStatus status, WebRequest request) {
         return handleValidationInternal(ex, ex.getBindingResult(), headers, status, request);
     }
+
 
     private ResponseEntity<Object> handleValidationInternal(Exception ex, BindingResult bindingResult,
                                                             HttpHeaders headers, HttpStatus status, WebRequest request) {
